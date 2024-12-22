@@ -1,0 +1,238 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Alta', sans-serif;
+    background: linear-gradient(135deg, #40717F, #335B67, #71BABE);
+    color: white;
+    text-align: center;
+}
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Alta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moontime&display=swap');
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #335B67;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #E68866;
+}
+
+/* Hero Section - Home Page */
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Alta', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Moontime', cursive;
+    font-size: 2rem;
+    color: #D0B9A4;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-family: 'Alta', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0 40px;
+}
+
+.cta-buttons button {
+    font-family: 'Alta', sans-serif;
+    background: #E68866;
+    border: none;
+    padding: 15px 40px;
+    margin: 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(230, 136, 102, 0.5);
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    display: inline-block;
+    margin: 40px auto;
+}
+
+.background-video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.dropper-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+/* Join Us Section */
+.join-hero h1 {
+    font-size: 3.5rem;
+    margin-top: 60px;
+    font-family: 'Alta', sans-serif;
+}
+
+.mission-words span {
+    font-size: 2.5rem;
+    margin: 0 15px;
+    color: #71BABE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mission-words {
+    font-family: 'Alta', sans-serif;
+}
+
+.join-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.join-card {
+    background: #335B67;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.join-card:hover {
+    transform: translateY(-10px);
+}
+
+.join-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.join-card h3 {
+    font-family: 'Alta', sans-serif;
+    font-size: 2rem;
+    margin: 20px 0 10px;
+}
+
+.blurb {
+    font-family: 'Moontime', cursive;
+    color: #D0B9A4;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.open {
+    color: #71BABE;
+    font-weight: bold;
+}
+
+.closed {
+    color: #E68866;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .hero h1, .join-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .join-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-card {
+        width: 90%;
+    }
+}
+
+/* Mission Page Styling */
+.mission-hero {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #40717F, #335B67, #71BABE);
+    color: white;
+    text-align: center;
+}
+
+.mission-hero h1 {
+    font-family: 'Alta', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #E68866;
+}
+
+.mission-hero blockquote {
+    font-family: 'Moontime', cursive;
+    font-size: 2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #D0B9A4;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+blockquote::before, blockquote::after {
+    content: '“';
+    font-size: 5rem;
+    color: #E68866;
+    line-height: 0;
+}
+
+blockquote::after {
+    content: '”';
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-hero h1 {
+        font-size: 3rem;
+    }
+    .mission-hero blockquote {
+        font-size: 1.6rem;
+    }
+}
+
